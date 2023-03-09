@@ -83,8 +83,14 @@ npm install
 ```
 npm run dev
 ```
-10. Serve your Laravel app (valet link, wamp, xamp, sail or whatever)
+10. Serve your Laravel app (valet in example, wamp, xamp, sail or whatever)
+```
+valet link mysite
+```
 11. Open served address in your browser.
+```
+http://mysite.test
+```
 
 Filament's admin account created by seeding:
 - login: **admin@admin.com**
