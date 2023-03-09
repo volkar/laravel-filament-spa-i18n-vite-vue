@@ -1,0 +1,28 @@
+{
+  "resources/css/app.css": {
+    "file": "assets/app-19fb21bf.css",
+    "src": "resources/css/app.css",
+    "isEntry": true
+  },
+  "resources/css/filament.css": {
+    "file": "assets/filament-815acc4e.css",
+    "src": "resources/css/filament.css",
+    "isEntry": true
+  },
+  "resources/js/views/CategoriesIndex.vue": {
+    "file": "assets/CategoriesIndex-908cfcf2.js",
+    "src": "resources/js/views/CategoriesIndex.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.js"
+    ]
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-2662fdc7.js",
+    "src": "resources/js/app.js",
+    "isEntry": true,
+    "dynamicImports": [
+      "resources/js/views/CategoriesIndex.vue"
+    ]
+  }
+}
