@@ -62,26 +62,29 @@ cd laravel-filament-spa-i18n-vite-vue
 ```
 composer update
 ```
-4. Copy .env.example to .env and generate keys
+4. Copy .env.example to .env
 ```
 cp .env.example .env
+```
+5. Generate keys
+```
 php artisan key:generate
 ```
-5. Edit your .env file to setup database connection
-6. Create database schema & seed it
+6. Edit your .env file to setup database connection and site address `APP_URL`
+7. Create database schema & seed it
 ```
 php artisan migrate:refresh --seed
 ```
-7. Install all node.js dependencies
+8. Install all node.js dependencies
 ```
 npm install
 ```
-8. Run Vite dev server
+9. Run Vite dev server
 ```
 npm run dev
 ```
-9. Serve your Laravel app (valet, wamp, xamp, sail or whatever)
-10. Open served address in your browser.
+10. Serve your Laravel app (valet link, wamp, xamp, sail or whatever)
+11. Open served address in your browser.
 
 Filament's admin account created by seeding:
 - login: **admin@admin.com**
