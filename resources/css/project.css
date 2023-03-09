@@ -1,0 +1,295 @@
+/* Fonts */
+
+/*
+@font-face {
+    font-family: 'Some Font';
+    src: url('../fonts/file.otf');
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+}
+*/
+
+/* Layout */
+
+html {
+    height: 100%;
+    line-height: 1.45;
+    -webkit-overflow-scrolling: touch;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+
+    font-size: 100%;
+    box-sizing: border-box;
+
+    --scheme-color-primary: #0ca6eb;
+    --scheme-color-text: #B4BED0;
+    --scheme-color-bg: #12161D;
+    --scheme-color-border: #191b23;
+
+    background-color: var(--scheme-color-bg);
+}
+
+/* Light theme */
+
+html.light {
+    --scheme-color-primary: #008fd9;
+    --scheme-color-text: #181a1d;
+    --scheme-color-bg: #ecf1fa;
+    --scheme-color-border: #d6e2ef;
+
+    background-color: var(--scheme-color-bg);
+}
+
+body {
+    position: relative;
+    min-height: 100%;
+    font-family: 'Roboto', Inter, Avenir, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+
+    font-size: 2.8vw;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    padding: 0;
+
+    color: var(--scheme-color-text);
+    background-color: var(--scheme-color-bg);
+}
+
+@media only screen and (orientation: landscape) and (min-width: 768px) {
+    body {
+        font-size: 1.2vw;
+    }
+}
+
+/* Box model */
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* Common elements */
+
+a {
+    color: var(--scheme-color-primary);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: var(--scheme-color-text);
+    text-decoration: underline;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    -ms-interpolation-mode: bicubic;
+}
+
+/* Form elements */
+
+label, input[type=button], input[type=submit], button {
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+input[type="radio"] {
+    vertical-align: text-bottom;
+}
+
+input[type="checkbox"] {
+    vertical-align: baseline;
+}
+
+input:focus {
+    outline: 0;
+}
+
+/* Typography */
+
+h1 {
+    font-size: 2.62em;
+    line-height: 1;
+    margin-bottom: 0.5em;
+    margin-top: 0;
+}
+
+h2 {
+    font-size: 1.62em;
+    line-height: 1.2;
+    margin-bottom: 0.8em;
+    margin-top: 0;
+}
+
+h3, h4, h5, h6 {
+    margin-bottom: 1em;
+    margin-top: 0;
+}
+
+p {
+    margin: 0 0 1.2em 0;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+/* Unordered list */
+
+ul {
+    padding: 0 0 0 2em;
+    margin: 0 0 1.2em 0;
+    list-style: disc;
+}
+
+ul ul {
+    margin: 0;
+    list-style: circle;
+}
+
+ul ol {
+    margin: 0;
+}
+
+/* Ordered list */
+
+ol {
+    padding: 0 0 0 2em;
+    margin: 0 0 1.2em 0;
+    list-style: decimal;
+}
+
+ol ol {
+    margin: 0;
+    list-style: lower-alpha;
+}
+
+ol ul {
+    margin: 0;
+}
+
+/* Divider */
+
+hr {
+    height: 0;
+    padding: 0;
+    border: 0;
+    margin: 1.5em 0;
+    color: transparent;
+    background-color: transparent;
+    border-bottom: 2px dashed var(--scheme-color-border);
+}
+
+/* Abbr */
+
+abbr, abbr[title] {
+    cursor: help;
+}
+
+/* Descriptions */
+
+dl {
+    margin: 0 0 1.2em 0;
+    padding: 0;
+}
+
+dl dt {
+    margin: 0;
+    font-weight: bold;
+}
+
+dl dd {
+    margin: 0 0 1.2em 0;
+    padding: 0;
+}
+
+/* Quote block */
+
+blockquote {
+    position: relative;
+    margin: 0 0 1em 0;
+    padding: 0.75em 2em 0.75em 2.2em;
+    font-style: italic;
+}
+
+blockquote footer {
+    margin-top: -0.7em;
+}
+
+blockquote:before {
+    position: absolute;
+    display: block;
+    left: -0.1em;
+    top: -0.2em;
+    content: "\201C";
+    font-size: 4em;
+    color: var(--scheme-color-border);
+}
+
+blockquote cite:before {
+    content: "\2009 \2014 \2009\2009\2009";
+}
+
+/* SPA Example styles */
+/* Can be safely deleted */
+
+a {
+    font-weight: 500;
+    color: var(--scheme-color-primary);
+    text-decoration: inherit;
+}
+
+a:hover {
+    color: var(--scheme-color-text);
+}
+
+p {
+    margin-bottom: 1em;
+    line-height: 1.4em;
+}
+
+h1 {
+    font-size: 3em;
+    line-height: 1.1;
+    margin-bottom: 1em;
+}
+
+#app {
+    padding: 2em;
+    text-align: center;
+}
+
+article {
+    padding: 2em;
+}
+
+.logo-links > a {
+    display: inline-block;
+    margin: 0 0.3em;
+}
+.logo {
+    height: 4em;
+    padding: 1em 0.5em;
+    will-change: filter;
+}
+
+.logo.vite:hover {
+    filter: drop-shadow(0 0 0.5em #646cffaa);
+}
+.logo.vue:hover {
+    filter: drop-shadow(0 0 0.5em #42b883aa);
+}
+.logo.pinia:hover {
+    filter: drop-shadow(0 0 0.5em #ffe56caa);
+}
+.logo.laravel:hover {
+    filter: drop-shadow(0 0 0.5em #ff4411aa);
+}

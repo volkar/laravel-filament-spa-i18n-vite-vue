@@ -1,0 +1,15 @@
+/* Normalize.css */
+
+@import "normalize.css";
+
+/* Project styles */
+
+@import "project.css";
+
+/* Tailwind.css if you need it in frontend */
+
+/*
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*/

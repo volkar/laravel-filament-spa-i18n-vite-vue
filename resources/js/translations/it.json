@@ -1,0 +1,11 @@
+{
+  "mainmenu": {
+    "index": "Indice",
+    "categories": "Categorie",
+    "about": "Informazioni",
+    "admin": "Admin"
+  },
+  "button": {
+    "all_categories": "Tutte le categorie"
+  }
+}

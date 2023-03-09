@@ -1,0 +1,14 @@
+/* TEAM */
+
+	Architect: Sergey VolkaR
+	Website: http://volkar.ru
+
+/* THANKS */
+
+	To my Muse
+
+/* SITE */
+
+	Doctype: HTML5
+	Tools: Raycast, PHPStorm, Insomnia, DBNgin, TablePlus, Node.js, Dash, Forklift, Photoshop
+	Tech: Vite, Vue, Pinia, Ky, Laravel, Filament
