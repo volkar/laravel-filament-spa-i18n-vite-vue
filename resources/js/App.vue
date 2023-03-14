@@ -1,5 +1,5 @@
 <script setup lang="ts">
-    import { onMounted, ref } from 'vue'
+import {onMounted, ref, unref} from 'vue'
     import useApi from '@/use/useApi'
     import { useI18n } from 'vue-i18n'
     import { useSettingsStore } from '@/stores/settingsStore'
@@ -50,11 +50,8 @@
         await getApi('init');
 
         if (data.value.loaded === true) {
-            // Initial settings loaded successfully
-            const settings = data.value
-
-            // Store settings
-            settingsStore.storeSettings(settings)
+            // Initial settings loaded successfully, store them
+            settingsStore.storeSettings(unref(data))
         }
     }
 

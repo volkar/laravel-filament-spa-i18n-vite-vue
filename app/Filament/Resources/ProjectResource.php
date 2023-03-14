@@ -67,7 +67,7 @@ class ProjectResource extends Resource
                         SpatieMediaLibraryFileUpload::make('cover')
                             ->label('Cover')
                             ->required()
-                            ->acceptedFileTypes(['image/jpeg'])
+                            ->image()
                             ->collection('default'),
 
                     ]),
@@ -91,8 +91,8 @@ class ProjectResource extends Resource
                 SpatieMediaLibraryImageColumn::make('cover')
                     ->label('Cover')
                     ->collection('default')
-                    ->conversion('preview')
-                    ->height(60),
+                    ->conversion('filament_preview')
+                    ->height(65),
                 BadgeColumn::make('category.title')
                     ->label('Category')
                     ->colors(['secondary'])

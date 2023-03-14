@@ -32,7 +32,7 @@
             <div class="projects">
                 <div v-for="project in data.projects" :key="project.id">
                     <h2>{{ project.title[$i18n.locale] }}</h2>
-                    <img :src="project.cover" :alt="project.title">
+                    <img :src="project.images[0].large" :alt="project.title">
                     <p>{{ project.content[$i18n.locale] }}</p>
                 </div>
             </div>

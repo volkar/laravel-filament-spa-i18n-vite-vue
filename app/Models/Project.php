@@ -32,8 +32,21 @@ class Project extends Model implements HasMedia
     public function registerMediaConversions(Media $media = null): void
     {
         $this
-            ->addMediaConversion('preview')
+            ->addMediaConversion('filament_preview')
             ->fit(Manipulations::FIT_CROP, 400, 250)
+            ->sharpen(10)
+            ->nonQueued();
+        $this
+            ->addMediaConversion('preview')
+            ->width(700)
+            ->height(700)
+            ->sharpen(10)
+            ->nonQueued();
+        $this
+            ->addMediaConversion('large')
+            ->width(1500)
+            ->height(1500)
+            ->sharpen(10)
             ->nonQueued();
     }
 }
