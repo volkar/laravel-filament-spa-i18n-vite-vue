@@ -1,28 +1,67 @@
 {
+  "resources/js/app.css": {
+    "file": "assets/app-9a676000.css",
+    "src": "resources/js/app.css"
+  },
+  "resources/js/views/CategoriesView.css": {
+    "file": "assets/CategoriesView-a7351d40.css",
+    "src": "resources/js/views/CategoriesView.css"
+  },
+  "resources/js/views/CategoryView.css": {
+    "file": "assets/CategoryView-0c248fe7.css",
+    "src": "resources/js/views/CategoryView.css"
+  },
   "resources/css/app.css": {
-    "file": "assets/app-19fb21bf.css",
+    "file": "assets/app-07474354.css",
     "src": "resources/css/app.css",
     "isEntry": true
   },
   "resources/css/filament.css": {
-    "file": "assets/filament-815acc4e.css",
+    "file": "assets/filament-b87636d4.css",
     "src": "resources/css/filament.css",
     "isEntry": true
   },
-  "resources/js/views/CategoriesIndex.vue": {
-    "file": "assets/CategoriesIndex-908cfcf2.js",
-    "src": "resources/js/views/CategoriesIndex.vue",
+  "resources/js/views/AboutView.vue": {
+    "file": "assets/AboutView-515d936f.js",
+    "src": "resources/js/views/AboutView.vue",
     "isDynamicEntry": true,
     "imports": [
-      "resources/js/app.js"
+      "resources/js/app.ts"
     ]
   },
-  "resources/js/app.js": {
-    "file": "assets/app-2662fdc7.js",
-    "src": "resources/js/app.js",
+  "resources/js/views/CategoryView.vue": {
+    "file": "assets/CategoryView-c9ec601e.js",
+    "src": "resources/js/views/CategoryView.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.ts"
+    ],
+    "css": [
+      "assets/CategoryView-0c248fe7.css"
+    ]
+  },
+  "resources/js/views/CategoriesView.vue": {
+    "file": "assets/CategoriesView-c28839df.js",
+    "src": "resources/js/views/CategoriesView.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.ts"
+    ],
+    "css": [
+      "assets/CategoriesView-a7351d40.css"
+    ]
+  },
+  "resources/js/app.ts": {
+    "file": "assets/app-2d0a6c10.js",
+    "src": "resources/js/app.ts",
     "isEntry": true,
     "dynamicImports": [
-      "resources/js/views/CategoriesIndex.vue"
+      "resources/js/views/CategoriesView.vue",
+      "resources/js/views/CategoryView.vue",
+      "resources/js/views/AboutView.vue"
+    ],
+    "css": [
+      "assets/app-9a676000.css"
     ]
   }
 }
