@@ -10,6 +10,7 @@
         "resolveJsonModule": true,
         "isolatedModules": true,
         "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
         "lib": ["esnext", "dom"],
         "skipLibCheck": true,
         "baseUrl": ".",

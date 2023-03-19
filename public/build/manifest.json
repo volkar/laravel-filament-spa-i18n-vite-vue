@@ -26,7 +26,7 @@
     "src": "resources/js/views/AboutView.vue",
     "isDynamicEntry": true,
     "imports": [
-      "resources/js/app.ts"
+      "resources/js/app.js"
     ]
   },
   "resources/js/views/CategoryView.vue": {
@@ -34,7 +34,7 @@
     "src": "resources/js/views/CategoryView.vue",
     "isDynamicEntry": true,
     "imports": [
-      "resources/js/app.ts"
+      "resources/js/app.js"
     ],
     "css": [
       "assets/CategoryView-0c248fe7.css"
@@ -45,15 +45,15 @@
     "src": "resources/js/views/CategoriesView.vue",
     "isDynamicEntry": true,
     "imports": [
-      "resources/js/app.ts"
+      "resources/js/app.js"
     ],
     "css": [
       "assets/CategoriesView-a7351d40.css"
     ]
   },
-  "resources/js/app.ts": {
+  "resources/js/app.js": {
     "file": "assets/app-2d0a6c10.js",
-    "src": "resources/js/app.ts",
+    "src": "resources/js/app.js",
     "isEntry": true,
     "dynamicImports": [
       "resources/js/views/CategoriesView.vue",

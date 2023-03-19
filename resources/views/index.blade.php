@@ -34,7 +34,7 @@
 
     <div id="app"></div>
 
-    @vite(['resources/js/app.ts'])
+    @vite(['resources/js/app.js'])
 
 </body>
 </html>
